@@ -1,6 +1,7 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import * as DevMenu from "expo-dev-menu";
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import * as DevMenu from 'expo-dev-menu';
+import * as React from 'react';
 
 const Button = ({ label, onPress }) => (
   <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
@@ -26,20 +27,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   buttonContainer: {
-    backgroundColor: "#4630eb",
+    backgroundColor: '#4630eb',
     borderRadius: 4,
     padding: 12,
     marginVertical: 10,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   buttonText: {
-    color: "#ffffff",
+    color: '#ffffff',
     fontSize: 16,
   },
 });
